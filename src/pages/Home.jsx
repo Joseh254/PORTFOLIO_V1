@@ -10,36 +10,46 @@ import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
 import Contact from "../components/contact/Contact";
 import "../../index.css";
+import Seo from "../components/SEO/Seo";
 import { Helmet } from "react-helmet-async";
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <title>Joseph Mbugua | Full Stack Developer Portfolio</title>
-        <meta
-          name="description"
-          content="Explore the portfolio of Joseph Mbugua — a Full Stack Developer skilled in React, Node.js, Express, PostgreSQL, and Python. View projects, case studies, and contact details."
-        />
-        <meta
-          name="keywords"
-          content="Joseph Mbugua, Full Stack Developer, React Developer, Express, Node.js, PostgreSQL, Python, Portfolio,web developer,web designer,mobile app developer"
-        />
-        <meta name="author" content="Joseph Mbugua" />
-        <meta property="og:title" content="Joseph Mbugua | Portfolio" />
-        <meta
-          property="og:description"
-          content="Full Stack Developer portfolio featuring React, Express, and Python projects."
-        />
-        <meta
-          property="og:image"
-          content="https://joseph-mbugua-portfolio.vercel.app/preview.png"
-        />
-        <meta
-          property="og:url"
-          content="https://joseph-mbugua-portfolio.vercel.app"
-        />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+ <Helmet>
+  <title>
+    Joseph Mbugua | Full Stack Web & Software Developer in Kenya | React, Node.js, DevOps
+  </title>
+
+  <meta
+    name="description"
+    content="Hire Joseph Mbugua — a Full Stack Web and Software Developer based in Kenya. I specialize in React, Node.js, Express, PostgreSQL, DevOps, and Windows/Office installation and activation. I build scalable systems, web apps,point of sales` and digital solutions for businesses."
+  />
+
+  <meta
+    name="keywords"
+    content="Full Stack Developer Kenya, Web Developer Kenya, Software Developer Kenya, React Developer, Node.js Developer, Express Developer, DevOps Engineer, Hire Web Developer, Portfolio Developer, Windows Installation Expert, Office Activation, IT Support, Freelance Developer, Joseph Mbugua"
+  />
+
+  <meta name="author" content="Joseph Mbugua" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph for Social Media */}
+  <meta property="og:title" content="Joseph Mbugua | Full Stack & Software Developer in Kenya" />
+  <meta
+    property="og:description"
+    content="Explore my portfolio showcasing full-stack applications, React projects, POS systems, and software solutions. I also provide Windows and Office setup and activation."
+  />
+  <meta
+    property="og:image"
+    content="https://joseph-mbugua-portfolio.vercel.app/preview.png"
+  />
+  <meta property="og:url" content="https://joseph-mbugua-portfolio.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  {/* For better search results */}
+  <link rel="canonical" href="https://joseph-mbugua-portfolio.vercel.app/" />
+</Helmet>
+
 
       <div className="relative">
         <div className="introduction-profile-background">
@@ -70,6 +80,7 @@ const Home = () => {
         <HappyClients />
         <Testimonial />
         <Contact />
+        <Seo/>
       </div>
     </>
   );
