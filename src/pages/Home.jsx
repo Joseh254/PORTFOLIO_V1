@@ -80,7 +80,7 @@ const Home = () => {
         <HappyClients />
         <Testimonial />
         <Contact />
-        <Seo/>
+        {/* <Seo/> */}
       </div>
     </>
   );
